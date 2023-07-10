@@ -1,0 +1,24 @@
+{
+  "name": "api-server",
+  "version": "1.0.0",
+  "description": "A server used by the Pluralsight Vue 3 State Management with Pinia course",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ."
+  },
+  "keywords": [
+    "Pinia",
+    "Vue",
+    "Vue.js",
+    "state management",
+    "training",
+    "course",
+    "api"
+  ],
+  "author": "Jim Cooper",
+  "license": "ISC",
+  "dependencies": {
+    "connect-history-api-fallback": "^2.0.0",
+    "express": "^4.18.2"
+  }
+}

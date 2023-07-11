@@ -15,6 +15,11 @@ const router = createRouter({
       component: () => import('@/cart/ShoppingCart.vue'),
     },
     {
+      path: '/search',
+      name: 'Search',
+      component: () => import('@/search/ProductSearch.vue'),
+    },
+    {
       path: '/',
       redirect: '/catalog',
     },

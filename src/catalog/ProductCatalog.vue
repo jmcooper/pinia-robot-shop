@@ -1,5 +1,5 @@
 <template>
-  <div class="container">
+  <div>
     <ul class="products">
       <li class="product-item" v-for="(product, index) in products" :key="index">
         <ProductInfo :product="product">

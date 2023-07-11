@@ -82,11 +82,33 @@ button:hover {
 }
 
 button.cta {
+  position: relative;
   font-family: Arial, Helvetica, sans-serif;
   background-color: var(--color-primary);
   color: #ddd;
+  transition-duration: 0.4s;
 }
 
-button.cta:hover {
-  color: #fff;
+button.cta::after {
+  content: "";
+  display: block;
+  position: absolute;
+  border-radius: 1em;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: all 0.5s;
+  box-shadow: 0 0 10px 20px var(--color-primary-light);
+}
+
+button.cta:active::after {
+  box-shadow: 0 0 0 0 var(--color-primary-light);
+  position: absolute;
+  border-radius: 1em;
+  left: 0;
+  top: 0;
+  opacity: 1;
+  transition: 0s;
 }

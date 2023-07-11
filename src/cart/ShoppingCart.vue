@@ -7,7 +7,7 @@
     <ul class="cart" v-if="cart.length > 0">
       <li class="cart-item" v-for="(product, index) in cart" :key="index">
         <ProductInfo :product="product">
-          <button class="cta" @click="removeFromCart(product)">Remove</button>
+          <button @click="removeFromCart(product)">Remove</button>
         </ProductInfo>
       </li>
     </ul>

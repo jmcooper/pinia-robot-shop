@@ -25,7 +25,7 @@ const cart = ref([{ ...products[10] }, { ...products[3] }])
 const cartTotal = ref(0)
 
 function removeFromCart(product) {
-  cart.value = cart.value.filter((i) => i !== product)
+  cart.value = cart.value.filter((p) => p !== product)
 }
 
 </script>
